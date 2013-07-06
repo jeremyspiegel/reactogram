@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		E11AFAC1178783100076E84B /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E11AFAC0178783100076E84B /* Storyboard.storyboard */; };
-		E11AFAC4178785460076E84B /* MessagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E11AFAC3178785460076E84B /* MessagesTableViewController.m */; };
+		E11AFAC4178785460076E84B /* ThreadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E11AFAC3178785460076E84B /* ThreadTableViewController.m */; };
+		E11AFAC6178786E40076E84B /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11AFAC5178786E40076E84B /* Firebase.framework */; };
+		E11AFAC8178787040076E84B /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E11AFAC7178787040076E84B /* libicucore.dylib */; };
+		E11AFACA1787870F0076E84B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11AFAC91787870F0076E84B /* CFNetwork.framework */; };
+		E11AFACC1787871A0076E84B /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11AFACB1787871A0076E84B /* Security.framework */; };
 		E1A635E6178780CD00D1D1C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A635E5178780CD00D1D1C2 /* Foundation.framework */; };
 		E1A635E8178780CD00D1D1C2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A635E7178780CD00D1D1C2 /* CoreGraphics.framework */; };
 		E1A635EA178780CD00D1D1C2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A635E9178780CD00D1D1C2 /* UIKit.framework */; };
@@ -22,8 +26,12 @@
 
 /* Begin PBXFileReference section */
 		E11AFAC0178783100076E84B /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		E11AFAC2178785460076E84B /* MessagesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesTableViewController.h; sourceTree = "<group>"; };
-		E11AFAC3178785460076E84B /* MessagesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesTableViewController.m; sourceTree = "<group>"; };
+		E11AFAC2178785460076E84B /* ThreadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThreadTableViewController.h; sourceTree = "<group>"; };
+		E11AFAC3178785460076E84B /* ThreadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThreadTableViewController.m; sourceTree = "<group>"; };
+		E11AFAC5178786E40076E84B /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		E11AFAC7178787040076E84B /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		E11AFAC91787870F0076E84B /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		E11AFACB1787871A0076E84B /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		E1A635E2178780CD00D1D1C2 /* reactogram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reactogram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1A635E5178780CD00D1D1C2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		E1A635E7178780CD00D1D1C2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -45,6 +53,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E11AFACC1787871A0076E84B /* Security.framework in Frameworks */,
+				E11AFACA1787870F0076E84B /* CFNetwork.framework in Frameworks */,
+				E11AFAC8178787040076E84B /* libicucore.dylib in Frameworks */,
+				E11AFAC6178786E40076E84B /* Firebase.framework in Frameworks */,
 				E1A635E8178780CD00D1D1C2 /* CoreGraphics.framework in Frameworks */,
 				E1A635EC178780CD00D1D1C2 /* CoreData.framework in Frameworks */,
 				E1A635EA178780CD00D1D1C2 /* UIKit.framework in Frameworks */,
@@ -75,6 +87,10 @@
 		E1A635E4178780CD00D1D1C2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E11AFACB1787871A0076E84B /* Security.framework */,
+				E11AFAC91787870F0076E84B /* CFNetwork.framework */,
+				E11AFAC7178787040076E84B /* libicucore.dylib */,
+				E11AFAC5178786E40076E84B /* Firebase.framework */,
 				E1A635E5178780CD00D1D1C2 /* Foundation.framework */,
 				E1A635E7178780CD00D1D1C2 /* CoreGraphics.framework */,
 				E1A635E9178780CD00D1D1C2 /* UIKit.framework */,
@@ -89,8 +105,8 @@
 			children = (
 				E1A635F6178780CD00D1D1C2 /* AppDelegate.h */,
 				E1A635F7178780CD00D1D1C2 /* AppDelegate.m */,
-				E11AFAC2178785460076E84B /* MessagesTableViewController.h */,
-				E11AFAC3178785460076E84B /* MessagesTableViewController.m */,
+				E11AFAC2178785460076E84B /* ThreadTableViewController.h */,
+				E11AFAC3178785460076E84B /* ThreadTableViewController.m */,
 				E1A635FC178780CD00D1D1C2 /* Images.xcassets */,
 				E1A635F9178780CD00D1D1C2 /* reactogram.xcdatamodeld */,
 				E1A635EE178780CD00D1D1C2 /* Supporting Files */,
@@ -177,7 +193,7 @@
 				E1A635F8178780CD00D1D1C2 /* AppDelegate.m in Sources */,
 				E1A635F4178780CD00D1D1C2 /* main.m in Sources */,
 				E1A635FB178780CD00D1D1C2 /* reactogram.xcdatamodeld in Sources */,
-				E11AFAC4178785460076E84B /* MessagesTableViewController.m in Sources */,
+				E11AFAC4178785460076E84B /* ThreadTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,9 +284,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "reactogram/reactogram-Prefix.pch";
 				INFOPLIST_FILE = "reactogram/reactogram-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,9 +302,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "reactogram/reactogram-Prefix.pch";
 				INFOPLIST_FILE = "reactogram/reactogram-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

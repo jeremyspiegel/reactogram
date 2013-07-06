@@ -1,5 +1,5 @@
 #import "AppDelegate.h"
-#import "MessagesTableViewController.h"
+#import "ThreadTableViewController.h"
 
 @implementation AppDelegate
 
@@ -14,7 +14,7 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = [[MessagesTableViewController alloc] init];
+    self.window.rootViewController = [[ThreadTableViewController alloc] init];
     return YES;
 }
 
