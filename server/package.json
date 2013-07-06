@@ -1,0 +1,10 @@
+{
+	"name": "reactogram",
+	"description": "The server component of reactogram",
+	"author": "Various peoples",
+	"version": "0.0.1",
+	"dependencies": {
+		"firebase": "",
+		"express": ""
+	}
+}
